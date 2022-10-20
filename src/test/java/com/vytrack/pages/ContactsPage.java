@@ -10,6 +10,9 @@ public class ContactsPage extends BasePage {
     @FindBy(css=".input-widget")
     public WebElement pageNumber;
 
+    @FindBy(css=".input-widget")
+    public WebElement pageNumber1;
+
 
     public WebElement getContactEmail(String email){
         String xpath = "//*[contains(text(), '"+email+"') and @data-column-label='Email']";
